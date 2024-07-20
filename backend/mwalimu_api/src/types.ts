@@ -6,6 +6,7 @@ export interface UserInfo {
     password: string;
     accessToken?: string;
     refreshToken?: string;
+    level: string;
 }
 
 export interface ServiceReturn {

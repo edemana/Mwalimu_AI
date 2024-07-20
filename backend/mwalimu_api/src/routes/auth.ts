@@ -52,11 +52,12 @@ auth.post("/signup", (req: CustomRequest<unknown, UserInfo>, res) => {
     #swagger.responses[200] = { description: 'User successfully signed up' }
     #swagger.responses[400] = { description: 'Email is already registered'}
     */
-    const { email, password } = req.body;
+    const { email, password, level } = req.body;
 
     const userInfo: UserInfo = {
         email: email,
         password: password,
+        level: level,
     };
     logger.debug(prettyPrint(userInfo));
 

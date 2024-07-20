@@ -7,6 +7,7 @@ export const users = pgTable("user", {
     email: varchar("email").notNull(),
     salt: varchar("salt").notNull(),
     passhash: varchar("passhash").notNull(),
+    level: varchar("level").notNull(),
 });
 
 export type User = InferSelectModel<typeof users>;

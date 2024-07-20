@@ -58,7 +58,7 @@ class UserService {
     }
 
     async SignUp(userInfo: UserInfo): Promise<ServiceReturn> {
-        const { email, password } = userInfo;
+        const { email, password, level } = userInfo;
         try {
             const users = await getUser(email);
 
@@ -75,6 +75,7 @@ class UserService {
                 email: email,
                 salt: salt,
                 passhash: await hash(password, salt),
+                level: level,
             };
 
             try {

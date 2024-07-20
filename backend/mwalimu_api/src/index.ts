@@ -15,11 +15,12 @@ dotenv.config();
 const app = express();
 
 app.use(compression());
-if (process.env.NODE_ENV !== "development") {
-    app.use(cors({}));
-} else {
-    app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
-}
+app.use(cors());
+// if (process.env.NODE_ENV !== "development") {
+//     app.use(cors({}));
+// } else {
+//     app.use(cors({ credentials: true, origin: "http://localhost:10500" }));
+// }
 app.use(express.json());
 app.use(httpLogger);
 app.use(helmet());
