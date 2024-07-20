@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mwalimu AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Mwalimu AI</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="account-buttons">
+          <button class="secondary-button">I already have an account</button>
+          <button class="primary-button">Get Started</button>
+        </div>
+        <div class="language-selector">
+          <select id="language">
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <main class="homepage" id="homepage">
+      <h1>Welcome to Mwalimu AI</h1>
+      <p class="tagline">Empowering Education Through AI</p>
+      <button class="primary-button" onclick="getStarted()">Get Started</button>
+      <p></p>
+      <button class="secondary-button" onclick="login()">
+        I already have an account
+      </button>
+    </main>
+
+    <main class="login-page" id="login-page" style="display: none">
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Login</button>
+        <div class="additional-options">
+          <label for="remember-me">
+            <input type="checkbox" id="remember-me" /> Remember me
+          </label>
+        </div>
+        <div class="social-login">
+          <button class="google-login">Login with Google</button>
+          <button class="facebook-login">Login with Facebook</button>
+        </div>
+      </form>
+    </main>
+
+    <main class="level-selection" id="level-selection" style="display: none">
+      <h2>Select Your Level</h2>
+      <button class="primary-button" onclick="selectLevel('beginner')">
+        Beginner
+      </button>
+      <button class="primary-button" onclick="selectLevel('intermediate')">
+        Intermediate
+      </button>
+      <button class="primary-button" onclick="selectLevel('advanced')">
+        Advanced
+      </button>
+    </main>
+
+    <main class="questionnaire" id="questionnaire" style="display: none">
+      <h2>Questionnaire</h2>
+      <form>
+        <label for="question1">Question 1:</label>
+        <input type="text" id="question1" name="question1" required />
+
+        <label for="question2">Question 2:</label>
+        <input type="text" id="question2" name="question2" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <main class="course-selection" id="course-selection" style="display: none">
+      <h2>Course Selection</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <h3>Course 1</h3>
+          <p>Description of Course 1</p>
+        </div>
+        <div class="course-card">
+          <h3>Course 2</h3>
+          <p>Description of Course 2</p>
+        </div>
+        <div class="course-card">
+          <h3>Course 3</h3>
+          <p>Description of Course 3</p>
+        </div>
+      </div>
+    </main>
+
+    <main
+      class="topic-exploration"
+      id="topic-exploration"
+      style="display: none"
+    >
+      <h2>Topic Exploration</h2>
+      <div class="chat-interface">
+        <div class="chat-window">
+          <!-- Chat messages will appear here -->
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="newsletter">
+        <p>Subscribe to our newsletter</p>
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+          <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+        </div>
+        <div class="language-selector-footer">
+          <select>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+          </select>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Mwalimu AI. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
