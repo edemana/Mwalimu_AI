@@ -289,6 +289,19 @@
     justify-content: center;
     gap: 10px;
   }
+  .fb-icon, .twitter-icon, .linkedIn-icon
+{
+  width: 20px;
+  height: 20px;
+}
+
+.logo
+{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}S
   
   .language-selector-footer select {
     padding: 5px;

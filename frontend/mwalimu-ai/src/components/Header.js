@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 const Header = () => (
   <header>
     <nav>
-      <div ></div>
-      <div className="logo">Mwalimu AI</div>
+    <div>
+        <img class="logo" src="icons/DALL·E 2024-07-20 21.43.48 - Create a vibrant and minimalistic logo for 'Malenwa', an AI-powered web app that provides personalized tutoring to students. The logo should feature a.webp" alt=""></img>
+        </div>      
+        <div className="logo">Mwalimu AI</div>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/courses">Courses</Link></li>

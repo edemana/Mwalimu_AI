@@ -13,11 +13,11 @@ const Footer = () => (
         <li><a href="#">Terms of Service</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
-      <div className="social-icons">
-        <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
-        <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
-        <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
-      </div>
+      <div class="social-icons">
+          <a href="#"><img src="assets/fb_icon.png" alt="Facebook" class="fb-icon"/></a>
+          <a href="#"><img src="assets/twitter_icon.png" alt="Twitter" class="twitter-icon" /></a>
+          <a href="#"><img src="assets/linkedIn.png" alt="LinkedIn" class="linkedIn-icon" /></a>
+          </div>
       <div className="language-selector-footer">
         <select>
           <option value="en">English</option>
