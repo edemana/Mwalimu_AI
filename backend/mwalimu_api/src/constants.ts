@@ -21,7 +21,7 @@ export const ROUNDS = 10;
 // export const PG_HOST = process.env.PG_HOST || "0.0.0.0";
 export const PG_PORT = 5432;
 
-export const PROD_CONNECTION_STRING = process.env.POSTGRES_URL;
+export const OPEN_AI_KEY = process.env.OPENAI_API_KEY;
 
 let PG_USER: string;
 let PG_PASS: string;

@@ -9,6 +9,7 @@ import { httpLogger, logger } from "./logging";
 import { HOST, PORT } from "./constants";
 
 import auth from "./routes/auth";
+import learning from "./routes/learning";
 
 dotenv.config();
 const app = express();
@@ -37,6 +38,8 @@ app.get("/info", (_req, res, _next) => {
 });
 
 app.use("/auth", auth);
+
+app.use("/learning", learning);
 
 export default app;
 
