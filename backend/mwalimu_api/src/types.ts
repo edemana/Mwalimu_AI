@@ -14,6 +14,18 @@ export interface ServiceReturn {
     extra?: any;
 }
 
+export interface SubGoal {
+    description: string;
+    status: boolean;
+}
+
+// export interface Lesson {
+//     topic: string;
+//     subGoals: {
+//         [key: string]: SubGoal;
+//     };
+// }
+
 export type CustomRequest<Params = unknown, ReqBody = unknown> = Request<
     Params,
     unknown,
