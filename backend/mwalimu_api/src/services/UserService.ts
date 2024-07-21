@@ -33,7 +33,7 @@ class UserService {
 
             logger.info(`User: ${email} found`);
 
-            const { passhash, userId } = users[0];
+            const { passhash, userId, level } = users[0];
             const compareResult = await compare(password, passhash);
             if (compareResult) {
                 const { accessToken, refreshToken } = generateTokens(userId);
@@ -43,6 +43,7 @@ class UserService {
                     email: email,
                     accessToken: accessToken,
                     refreshToken: refreshToken,
+                    level: level,
                 };
                 logger.debug(prettyPrint(userDetails));
                 return { status: 200, data: { userDetails } };
@@ -84,20 +85,6 @@ class UserService {
 
                 logger.info(`User: ${email} successfully registered`);
                 logger.debug(prettyPrint(result));
-
-                // logger.info(`Creating starting categories for user ${email}`);
-                // const startingCategories = STARTING_CATEGORIES.map(
-                //     (category) => ({ ...category, userId: userId }),
-                // );
-                // logger.info(
-                //     `Adding categories to user ${email}\n${prettyPrint(
-                //         startingCategories,
-                //     )}`,
-                // );
-                // startingCategories.forEach(
-                //     // eslint-disable-next-line @typescript-eslint/no-misused-promises
-                //     async (category) => await insertCategory(category),
-                // );
 
                 return {
                     status: 200,

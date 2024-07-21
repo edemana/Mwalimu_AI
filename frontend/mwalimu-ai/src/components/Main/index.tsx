@@ -7,6 +7,7 @@ import Login from "../Login/index";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignUp from "../SignUp/index";
+import Topics from "../Topics";
 
 const Main = () => {
     return (
@@ -19,6 +20,7 @@ const Main = () => {
                     <Route path="/level-selection" element={<Levels />} />
                     <Route path="/signup" element={<SignUp />} />/
                     <Route path="/courses" element={<Courses />} />
+                    <Route path="/topics" element={<Topics />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>

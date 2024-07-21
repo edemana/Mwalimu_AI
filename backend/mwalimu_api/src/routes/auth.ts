@@ -93,6 +93,7 @@ auth.post("/login", (req: CustomRequest<unknown, LoginRequest>, res) => {
             .update(refreshId)
             .digest("base64");
         req.body.refreshKey = salt;
+        req.body.uniqueClaim = new Date().getTime();
         const token = sign(req.body, SECRET_KEY, {
             expiresIn: "3h",
         });

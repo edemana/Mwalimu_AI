@@ -1,12 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import useStore from "../stores/index";
 
 const Levels = () => {
     const navigate = useNavigate();
+    const updateLevel = useStore((state) => state.updateLevel);
 
     const toSignUp = (e: React.MouseEvent, level: string) => {
         e.preventDefault();
-        navigate("/signup", { state: { level } });
+        updateLevel(level);
+        navigate("/signup");
     };
 
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-const TopicExploration = () => (
+const Topics = () => (
     <main className="topic-exploration" id="topic-exploration">
         <h2>Topic Exploration</h2>
         <div className="chat-interface">
@@ -14,4 +14,4 @@ const TopicExploration = () => (
     </main>
 );
 
-export default TopicExploration;
+export default Topics;
