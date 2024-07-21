@@ -1,80 +1,80 @@
 /* Reset and base styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 body {
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", sans-serif; /* Set the font family for the page */
     background: linear-gradient(
             135deg,
             rgba(244, 244, 244, 0.7),
             rgba(224, 224, 224, 0.7)
         ),
-        url("./assets/pexels-pixabay-301920.jpg"); /* Ensure the correct path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+        url("./assets/pexels-pixabay-301920.jpg"); /* Set background gradient and image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image repetition */
+    color: #333; /* Set text color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children in a column */
+    min-height: 100vh; /* Ensure minimum height is the full viewport height */
 }
 
 header {
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+    width: 100%; /* Full width header */
+    background-color: #fff; /* White background for header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+    position: fixed; /* Fix header to the top of the viewport */
+    top: 0; /* Position at the top */
+    z-index: 1000; /* Ensure header is above other content */
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 20px;
+    display: flex; /* Use flexbox for navigation layout */
+    justify-content: space-between; /* Space out navigation items */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Limit width */
+    margin: 0 auto; /* Center navigation */
+    padding: 10px 20px; /* Add padding */
 }
 
 .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #6a5acd;
+    font-size: 1.5em; /* Increase font size for logo */
+    font-weight: bold; /* Make logo text bold */
+    color: #6a5acd; /* Set logo color */
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox for link layout */
+    gap: 20px; /* Space between links */
 }
 
 .nav-links li {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Smooth transform transition */
 }
 
 .nav-links li:hover {
-    transform: translateY(-3px);
+    transform: translateY(-3px); /* Lift effect on hover */
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1em;
-    padding: 10px 15px;
-    transition: color 0.3s;
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+    font-size: 1em; /* Set font size */
+    padding: 10px 15px; /* Add padding to links */
+    transition: color 0.3s; /* Smooth color transition */
 }
 
 .nav-links a:hover {
-    color: #ff8c00;
+    color: #ff8c00; /* Change color on hover */
 }
 
 .account-buttons {
-    display: flex;
-    gap: 10px;
+    display: flex; /* Use flexbox for button layout */
+    gap: 10px; /* Space between buttons */
 }
 
 .primary-button,
@@ -88,7 +88,7 @@ nav {
     transition:
         background-color 0.3s,
         transform 0.3s; /* Smooth transitions */
-    margin: 10px;
+    margin: 10px; /* Margin around buttons */
 }
 
 .secondary-button {
@@ -104,215 +104,216 @@ nav {
 }
 
 .language-selector select {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    margin: 10px;
+    padding: 5px; /* Padding for select input */
+    border: 1px solid #ccc; /* Border for select input */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove outline */
+    margin: 10px; /* Margin around select input */
 }
 
 main {
-    text-align: center;
-    padding: 100px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    animation: fadeIn 1s ease-in;
+    text-align: center; /* Center text */
+    padding: 100px 20px; /* Add padding */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
 }
+
 .homepage {
-    font-size: 2.5em;
-    margin: 20px 0;
+    font-size: 2.5em; /* Increase font size for homepage text */
+    margin: 20px 0; /* Add vertical margin */
 }
+
 .homepage h1 {
-    font-size: 2.5em;
-    margin: 20px 0;
-    color: #6a5acd;
+    font-size: 2.5em; /* Increase font size for heading */
+    margin: 20px 0; /* Add vertical margin */
+    color: #6a5acd; /* Set color */
 }
 
 .tagline {
-    font-size: 1.2em;
-    margin: 20px 0;
-    color: #555;
+    font-size: 1.2em; /* Set font size */
+    margin: 20px 0; /* Add vertical margin */
+    color: #555; /* Set color */
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Space between form elements */
 }
 
 form label {
-    margin-top: 10px;
-    color: #6a5acd;
+    margin-top: 10px; /* Add top margin */
+    color: #6a5acd; /* Set color */
 }
 
 form input {
-    margin: 5px;
-    padding: 10px;
-    width: 80%;
-    max-width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
+    margin: 5px; /* Margin around input fields */
+    padding: 10px; /* Padding inside input fields */
+    width: 80%; /* Set width */
+    max-width: 300px; /* Limit maximum width */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove outline */
 }
 
 .additional-options {
-    margin-top: 10px;
+    margin-top: 10px; /* Add top margin */
 }
 
 .social-login {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
+    margin-top: 20px; /* Add top margin */
+    display: flex; /* Use flexbox for layout */
+    gap: 10px; /* Space between buttons */
 }
 
 .social-login button {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 10px;
+    background-color: #fff; /* White background for social buttons */
+    border: 1px solid #ccc; /* Border for social buttons */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    margin: 10px; /* Margin around buttons */
 }
 
 .social-login button:hover {
-    background-color: #f0f0f0;
-    margin: 10px;
+    background-color: #f0f0f0; /* Light grey background on hover */
 }
 
 .course-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: flex; /* Use flexbox for layout */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    flex-wrap: wrap; /* Allow wrapping of cards */
 }
 
 .course-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    background-color: #fff; /* White background for course cards */
+    border: 1px solid #ccc; /* Border for course cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside cards */
+    width: 200px; /* Set width of cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+    transition: transform 0.3s; /* Smooth transform transition */
 }
 
 .course-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Lift effect on hover */
 }
 
 .chat-interface {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    margin: 20px auto;
+    background-color: #fff; /* White background for chat interface */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for chat interface */
+    padding: 20px; /* Padding inside chat interface */
+    width: 80%; /* Set width */
+    max-width: 600px; /* Limit maximum width */
+    margin: 20px auto; /* Center chat interface horizontally */
 }
 
 .chat-window {
-    background-color: #f9f9f9;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    padding: 10px;
-    height: 300px;
-    overflow-y: auto;
+    background-color: #f9f9f9; /* Light grey background for chat window */
+    border: 1px solid #eee; /* Border for chat window */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside chat window */
+    height: 300px; /* Set height */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .progress-bar {
-    width: 80%;
-    max-width: 600px;
-    height: 10px;
-    background-color: #f3f3f3;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 20px auto;
+    width: 80%; /* Set width */
+    max-width: 600px; /* Limit maximum width */
+    height: 10px; /* Set height */
+    background-color: #f3f3f3; /* Light grey background */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    margin: 20px auto; /* Center progress bar horizontally */
 }
 
 .progress {
-    height: 100%;
-    background-color: #6a5acd;
-    width: 0%;
-    transition: width 0.3s;
+    height: 100%; /* Full height of progress bar */
+    background-color: #6a5acd; /* Purple color for progress */
+    width: 0%; /* Initial width (to be updated dynamically) */
+    transition: width 0.3s; /* Smooth width transition */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: -10px;
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Center text */
+    margin-top: -10px; /* Negative margin to adjust spacing */
 }
 
 .newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between items */
 }
 
 .newsletter input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
+    padding: 10px; /* Padding inside input field */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
 }
 
 .newsletter button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: #6a5acd;
-    color: white;
-    cursor: pointer;
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    background-color: #6a5acd; /* Purple background for button */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
 .footer-links {
-    margin-top: 10px;
+    margin-top: 10px; /* Add top margin */
 }
 
 .footer-links ul {
-    list-style: none;
-    display: flex;
-    margin-top: 50px;
-    margin-right: 10px;
-    justify-content: right;
-    gap: 20px;
-    margin-bottom: -10px;
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox for layout */
+    margin-top: 50px; /* Top margin */
+    margin-right: 10px; /* Right margin */
+    justify-content: right; /* Align to the right */
+    gap: 20px; /* Space between links */
+    margin-bottom: -10px; /* Adjust bottom margin */
 }
 
 .footer-links a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Space between icons */
 }
 
 .language-selector-footer select {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
+    padding: 5px; /* Padding for select input */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
 }
 
 .footer-bottom {
-    margin-top: 10px;
+    margin-top: 10px; /* Add top margin */
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0; /* Start fully transparent */
     }
     to {
-        opacity: 1;
+        opacity: 1; /* End fully opaque */
     }
 }
